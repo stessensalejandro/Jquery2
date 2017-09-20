@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+var c = 0;
+$("p").hide();    
+    $("#boton").click(function(){
+    c++;
+
+if (c%2==0)
+           {
+               $("p").hide(5000);
+               $("#boton").empty();
+               
+               
+
+               $("#boton").append("Ver mas...")}
+
+ else
+           {$("p").show();
+           $("#boton").empty();
+               $("#boton").append("Ver Menos...")}
+    })
+   
+   
+});
+</script>
+
+
+</head>
+
+
+<body>
+
+<br>
+
+<button type="button" id="boton" value="" > Ver mas...</button>
+
+<p>
+EJERCICIO 3: Crear un botón con el texto “Ver más” que al presionarlo, permita
+ver debajo del mismo, un texto descriptivo a elección. Al “ver más” el nombre
+del botón debe cambiar a “Ver menos” para que al hacer clic nuevamente, se
+oculte de manera suave (dándole un delay al efecto hide) el texto recientemente
+mostrado.
+</p>
+
+</body>
