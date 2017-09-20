@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+
+$(document).ready(function(){
+
+    $("#desc").hide(0);
+    $("#i1").mouseenter(function(){
+        $("#i1").fadeOut(1000,function(){
+        $("#desc").fadeIn(1000);
+        });
+
+    });
+   
+
+   $("#i2").mouseenter(function(){
+        $("#i2").fadeOut(1000);
+    });
+    $("#i2").mouseenter(function(){
+        $("#i2").fadeIn(3000);
+    });
+     $("#i3").mouseenter(function(){
+        $("#i3").fadeOut(1000);
+    });
+    $("#i3").mouseenter(function(){
+        $("#i3").fadeIn(3000);
+    });
+
+    $("#i4").mouseenter(function(){
+        $("#i4").fadeOut(1000);
+    });
+    $("#i4").mouseenter(function(){
+        $("#i4").fadeIn(3000);
+    });
+
+});
+</script>
+
+<style>
+
+.descripcion
+{
+    width:200px;
+    height:200px;
+    text-align:center;
+}
+
+p#desc {
+    padding: 50px;
+}
+
+</style>
+</head>
+
+
+<body>
+<div class="descripcion">
+<p id="desc" >DESCRIPCION</p>
+<img src='https://cdn.pixabay.com/photo/2017/06/12/16/22/animal-2396029_640.jpg' width="200" title="Descripcion de la imagen 1" id="i1"> 
+</div>
+<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUo5SP8mcW0smEwKXAsHU2c0UxG7oDKIotAyUHWrY_9xjjiEmpFQ' title="Descripcion de la imagen 2" width="200" id="i2"> 
+
+<img src='https://cdn.pixabay.com/photo/2017/06/12/16/22/animal-2396029_640.jpg' width="200" title="Descripcion de la imagen 3" id="i3"> 
+
+<img src='https://cdn.pixabay.com/photo/2017/06/12/16/22/animal-2396029_640.jpg' width="200" title="Descripcion de la imagen 4" id="i4"> 
+
+
+</body>
+
+

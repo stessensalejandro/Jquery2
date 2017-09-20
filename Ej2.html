@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("p").hide();    
+
+    $("#boton").click(function(){
+        $("p").slideToggle();
+    });
+
+
+   
+
+});
+</script>
+
+
+</head>
+
+
+<body>
+
+Crear un menú el cual por defecto solo contenga un título, el
+mismo será “Sobre la empresa” que al hacer clic sobre el mismo, se extienda un
+panel con texto con una descripción breve. Al volver a hacer clic sobre el título,
+dicho panel debe contraerse y volver al estado inicial.
+
+<button type="button" id="boton" value="boton" > sobre la empresa</button>
+
+<nav title="titulo">
+
+
+
+<p> <a href="http://www.ole.com.ar"> ole </a> </p> 
+ <ul id="submenu" > <a href="http://www.ole.com.ar">  </a> 
+
+<p> <a href="http://www.clarin.com.ar"> clarin </p> 
+
+
+</nav>
+
+</body>
+
+
